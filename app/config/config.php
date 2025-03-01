@@ -1,5 +1,5 @@
 <?php
-
+    //Ruta física de la carpeta app
     define('RUTA_APP', dirname(dirname(__FILE__)));
     //Ruta de la aplicacion, dominio
     define('BASE_URL', 'http://localhost/dashboard/');
@@ -17,3 +17,7 @@
     define('DB_DATA', 'dashboard');
     //Puerto
     define('DB_PORT', '3306');
+
+    // Rutas de archivos
+    define('RUTA_DATOS', RUTA_APP . DIRECTORY_SEPARATOR . 'datos' . DIRECTORY_SEPARATOR);
+    define('RUTA_UPLOADS', dirname(RUTA_APP) . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR);

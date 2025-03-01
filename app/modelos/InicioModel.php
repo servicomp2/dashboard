@@ -7,5 +7,4 @@ class InicioModel
     {
         $this->db = new Base;
     }
-
 }
