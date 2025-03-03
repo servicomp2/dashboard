@@ -57,7 +57,7 @@ function generateModel($name, $basePath) {
     }
 
     $template = "<?php\n\n"
-              . "class " . ucfirst($name) . "\n"
+              . "class " . ucfirst($name) . "Model\n"
               . "{\n"
               . '    private $db;'."\n"
               . '    public function __construct()'."\n"
