@@ -4,7 +4,6 @@ class Controlador
 {
     protected $rutaModelos = '../app/modelos/';
     protected $rutaVistas = '../app/vistas/';
-
     public function modelo(string $modelo): object
     {
         $rutaModelo = $this->rutaModelos . $modelo . '.php';
@@ -21,7 +20,6 @@ class Controlador
 
         return new $modelo();
     }
-
     public function vista(string $vista, array $datos = []): void
     {
         $rutaVista = $this->rutaVistas . $vista . '.php';
@@ -32,5 +30,8 @@ class Controlador
 
         // Pasar los datos a la vista sin usar extract()
         require_once $rutaVista;
+    }
+    public function respuesta(array $respuesta){
+        echo json_encode($respuesta);
     }
 }
